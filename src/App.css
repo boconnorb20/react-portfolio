@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #282d37;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,3 +36,57 @@
     transform: rotate(360deg);
   }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+:root {
+  --primary-white: #fff;
+  --primary-blue: rgb(41, 135, 208);
+
+}
+
+body {
+  font-family: "Roboto Condensed" sans-serif;
+}
+
+/** Navbar **/
+
+.logo {
+  width: 12.25rem;
+  height: 6.25rem;
+
+}
+
+/** Menu Links **/ 
+
+nav a.nav-link {
+  font-weight: 500;
+  letter-spacing: 0.0375rem; 
+  
+  cursor: pointer;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  margin-right: .075rem;
+  margin-left: 0.75rem;
+  text-align: right;
+  color: var(--primary-white) !important;
+}
+
+.navbar-brand {
+  max-width: 17.25rem;
+  margin-left: .75rem;
+  color: var(--primary-white) !important;
+
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+  border-top: 0.1875rem solid var(--primary-blue);
+
+}
+
+
