@@ -41,7 +41,8 @@
 
 :root {
   --primary-white: #fff;
-  --primary-blue: rgb(41, 135, 208);
+  --primary-blue: rgb(110, 191, 235);
+  --primary-dark: rgba(255,255,255,0)
 
 }
 
@@ -52,9 +53,8 @@ body {
 /** Navbar **/
 
 .logo {
-  width: 12.25rem;
-  height: 6.25rem;
-
+  width: 15.00rem;
+  height: 6.50rem;
 }
 
 /** Menu Links **/ 
@@ -71,10 +71,10 @@ nav ul li {
 }
 
 .navbar-nav > li > a {
-  margin-right: .075rem;
+  margin-right: 0.075rem;
   margin-left: 0.75rem;
-  text-align: right;
   color: var(--primary-white) !important;
+  border-top: 00.1875rem solid var(--primary-dark);
 }
 
 .navbar-brand {
@@ -84,9 +84,17 @@ nav ul li {
 
 }
 
-.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+.navbar-nav > li > a.active, .navbar-nav > li > a:focus {
   border-top: 0.1875rem solid var(--primary-blue);
 
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 0.1875rem solid var(--primary-blue);
+}
+
+.nav-item {
+  margin-left: 75px;
 }
 
 
