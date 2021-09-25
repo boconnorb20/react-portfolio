@@ -25,7 +25,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #e4bb15;
 }
 
 @keyframes App-logo-spin {
@@ -43,8 +43,9 @@
   --primary-white: #fff;
   --primary-blue: rgb(110, 191, 235);
   --primary-dark: rgba(255,255,255,0);
-  --primary-green: rgb(105, 240, 211);
+  --primary-orange: rgb(221, 154, 53);
   --primary-grey: rgba(98, 182, 201, 0.844);
+  
 
 
 }
@@ -54,7 +55,7 @@ body {
 }
 
 /************************* Navbar ***************************/
-.nav {
+nav {
   z-index: 2;
 }
 
@@ -92,13 +93,21 @@ nav ul li {
 
 }
 
+@media(max-width: 768px) {
+  .navbar-brand {
+    width: 7rem;
+  }
+}
+
+
+
 .navbar-nav > li > a.active, .navbar-nav > li > a:focus {
-  border-top: 0.1875rem solid var(--primary-green);
+  border-top: 0.1875rem solid var(--primary-orange);
 
 }
 
 .navbar-nav > li > a:hover {
-  border-top: 0.1875rem solid var(--primary-green);
+  border-top: 0.1875rem solid var(--primary-orange);
 }
 
 .nav-item {
@@ -119,7 +128,7 @@ nav ul li {
 
 .main-info {
   display: flex;
-  position:absolute;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -128,8 +137,17 @@ nav ul li {
   justify-content: center;
   align-items: center;
   text-align: center;
+ 
   
 }
+
+@media(max-width: 768px) {
+  .main-info {
+    font-size: 1.7rem !important;
+  }
+}
+
+
 
 .main-info h1 {
   color: var(--primary-white);
@@ -137,6 +155,12 @@ nav ul li {
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-style: italic;
   font-weight: bold;
+}
+
+@media(max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.7rem !important;
+  }
 }
 
 
@@ -150,5 +174,13 @@ nav ul li {
   z-index: 1;
 
 }
+
+@media(max-width: 768px) {
+  .particles-canvas {
+    display: none;
+  }
+}
+
+
 
 
