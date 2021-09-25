@@ -12,22 +12,53 @@ function App() {
   return (
     <>
     <Particles 
+     className="particles-canvas"
      params={{
-       particles: {
-         number: {
-           value: 20,
-           enable: true,
-         },
-         shape: {
-           type: "circle",
-           stroke: {
-             width: 3,
-             color: "#f9ab00"
-           }
-
-         }
+      "interactivity": {
+        "events": {
+          "onHover": {
+            "enable": true,
+            "mode": "bubble"
+          },
+          "onClick": {
+            "enable": true,
+            "mode": "push"
+          }
+        },
+        "modes": {
+          "bubble": {
+            "opacity": 0.8,
+            "size": 10,
+            "color": {
+              "value": "#e4bb15"
+            }
+          }
+        }
+      },
+      "particles": {
+        "color": {
+          "value": "#000"
+        },
+        "links": {
+          "color": {
+            "value": "#000"
+          },
+          "enable": true,
+          "opacity": 0.5
+        },
+        "move": {
+          "enable": true
+        },
+        "opacity": {
+          "value": 0.5
+        },
+        "size": {
+          "value": 2
+        }
        }
-     }}    
+      }
+     }
+        
     />
     <Navbar />
     <Header />
@@ -36,5 +67,6 @@ function App() {
 
   );
 }
+
 
 export default App;
