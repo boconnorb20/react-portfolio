@@ -42,7 +42,10 @@
 :root {
   --primary-white: #fff;
   --primary-blue: rgb(110, 191, 235);
-  --primary-dark: rgba(255,255,255,0)
+  --primary-dark: rgba(255,255,255,0);
+  --primary-green: rgb(105, 240, 211);
+  --primary-grey: rgba(98, 182, 201, 0.844);
+
 
 }
 
@@ -50,11 +53,14 @@ body {
   font-family: "Roboto Condensed" sans-serif;
 }
 
-/** Navbar **/
+/************************* Navbar ***************************/
+.nav {
+  z-index: 2;
+}
 
 .logo {
-  width: 15.00rem;
-  height: 6.50rem;
+  width: 16.00rem;
+  height: 8.50rem;
 }
 
 /** Menu Links **/ 
@@ -62,7 +68,9 @@ body {
 nav a.nav-link {
   font-weight: 500;
   letter-spacing: 0.0375rem; 
-  
+  font-style: italic;
+  font-style: oblique;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   cursor: pointer;
 }
 
@@ -85,16 +93,62 @@ nav ul li {
 }
 
 .navbar-nav > li > a.active, .navbar-nav > li > a:focus {
-  border-top: 0.1875rem solid var(--primary-blue);
+  border-top: 0.1875rem solid var(--primary-green);
 
 }
 
 .navbar-nav > li > a:hover {
-  border-top: 0.1875rem solid var(--primary-blue);
+  border-top: 0.1875rem solid var(--primary-green);
 }
 
 .nav-item {
   margin-left: 75px;
+}
+
+
+
+/************************* Header ***************************/
+
+.header-wraper {
+  position: relative;
+  background: url(web-dev-5.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info {
+  display: flex;
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.main-info h1 {
+  color: var(--primary-white);
+  text-align: center;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+
+/************************* Particles ***************************/
+
+
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+
 }
 
 
