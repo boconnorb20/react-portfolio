@@ -51,7 +51,7 @@
 }
 
 body {
-  font-family: "Roboto Condensed" sans-serif;
+  font-family: "Roboto Condensed" sans-serif !important;
 }
 
 /************************* Navbar ***************************/
@@ -181,6 +181,31 @@ nav ul li {
   }
 }
 
+/************************* About Me ***************************/
 
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.profile-img {
+  width: 20rem;
+  padding: .5rem;
+  border: qpx solid var(--primary-orange);
+}
+
+.about-heading {
+  color: var(--primary-orange);
+  text-transform: uppercase;
+
+}
+
+@media(max-width: 468px) {
+  .profile-img {
+    width: 10rem;
+  }
+}
 
 
