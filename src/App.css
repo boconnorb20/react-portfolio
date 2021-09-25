@@ -44,7 +44,7 @@
   --primary-blue: rgb(110, 191, 235);
   --primary-dark: rgba(255,255,255,0);
   --primary-orange: rgb(221, 154, 53);
-  --primary-grey: rgba(98, 182, 201, 0.844);
+  --primary-grey: rgba(203, 216, 220, 0.844);
   
 
 
@@ -183,17 +183,22 @@ nav ul li {
 
 /************************* About Me ***************************/
 
+.container-py-5 {
+  margin-top: 2rem;
+
+}
+
 .photo-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 .profile-img {
   width: 20rem;
   padding: .5rem;
-  border: qpx solid var(--primary-orange);
+  border: 1px solid var(--primary-orange);
 }
 
 .about-heading {
