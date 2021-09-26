@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Particles from "react-tsparticles";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import AboutMe from "./components/AboutMe";
+import Interests from "./components/Interests"
 
 
 
@@ -64,6 +65,7 @@ function App() {
     <Navbar />
     <Header />
     <AboutMe />
+    <Interests />
 
     </>
 
