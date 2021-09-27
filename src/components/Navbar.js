@@ -16,12 +16,15 @@ const Navbar = () => {
           <FontAwesomeIcon icon={faBars} style={{color: "#fff"}} />
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav m-auto test">
+            <ul className="navbar-nav ml-auto test">
                 <li className="nav-item active">
                  <a className="nav-link" href="#">Home</a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">About Me</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">Interests</a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">Portfolio</a>
