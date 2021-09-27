@@ -46,7 +46,9 @@
   --primary-dark: rgb(52,58,64);
   --primary-orange: rgb(221, 154, 53);
   --primary-grey: rgba(203, 216, 220, 0.844);
-  
+  --primary-black: #000000;
+  --primary-red: #ef4035;
+
 
 
 }
@@ -61,15 +63,15 @@ nav {
 }
 
 .logo {
-  width: 16.00rem;
+  width: 11.00rem;
   height: 8.50rem;
 }
 
 /** Menu Links **/ 
 
 nav a.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.0375rem; 
+  font-weight: 400;
+  letter-spacing: 0.0350rem; 
   font-style: italic;
   font-style: oblique;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -81,8 +83,8 @@ nav ul li {
 }
 
 .navbar-nav > li > a {
-  margin-right: 0.075rem;
-  margin-left: 0.75rem;
+  margin-right: .05rem;
+  margin-left: 0.50rem;
   color: var(--primary-white) !important;
   border-top: 00.1875rem solid var(--primary-dark);
 }
@@ -112,7 +114,7 @@ nav ul li {
 }
 
 .nav-item {
-  margin-left: 75px;
+  margin-left: 50px;
 }
 
 
@@ -197,7 +199,7 @@ nav ul li {
   width: 20rem;
   padding: .5rem;
   border: 1px solid var(--primary-orange);
-  z-index: 2;
+
 }
 
 .about-heading {
@@ -254,6 +256,7 @@ nav ul li {
   padding: .625rem;
   margin-bottom: 1.875rem;
   background: var(--primary-white);
+  transition: 0.4s ease-in-out;
 
 
 }
@@ -278,3 +281,41 @@ nav ul li {
   color: var(--primary-white);
 
 }
+
+/************************* Portfolio ***************************/
+
+.portfolio-wrapper {
+  background: var(--primary-light-grey);
+  padding: 4rem 0;
+
+}
+
+.portfolio-image {
+  width: 15rem;
+  border: 1px solid var(--primary-orange);
+  padding: 0 0.5rem;
+}
+
+.portfolio-image-box {
+  flex: 20%;
+  margin: 1rem;
+}
+
+
+
+
+/************************* Overflow ***************************/
+
+/* .overflow {
+  flex: 20%;
+  opacity: 1;
+  background: var(--primary-black);
+  width: 15rem;
+  height: 8rem;
+  top: 0;
+  border: 1px solid var(--primary-red);
+  cursor: pointer;
+
+
+} */
+
